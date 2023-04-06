@@ -12,4 +12,7 @@ setup: # Setup tools required for local development.
 
 .PHONY: build 
 build:  # build go scripts 
-	go build main.go 
+	go build main.go  
+
+.PHONY: lint 
+	golangci-lint run 
